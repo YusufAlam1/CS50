@@ -1,0 +1,45 @@
+VERTICAL SCALING
+Increasing capacity by increasing server's computing power
+/// -> //////
+
+HORIZONTAL SCALING
+Increasing capacity by distributing load accorss multiple servers
+/// -> ///  ///  ///
+
+    REPLICATION
+    Keeping copies of databases on multiple servers
+
+    MODELS OF REPLICATIONS
+        SINGLE LEADER
+        One db server that takes care of everything and then sends it out to followers
+        
+        MULTI-LEADER
+        Multiple db servers instead of just one
+        
+        LEADERLESS
+
+    READ REPLICA
+    A copy of a db from which data is only  read
+
+    SYNCHROUNOUS REPLICATION
+        Client to Leader request
+        Leader to Follower request
+        Follower to Leader OK
+        Leader to Client OK
+        
+        PRO: Data is secure
+        CON: Redundant - Takes time
+        
+    ASYNCRONOUNOUS REPLICATION
+        Client to Leader request
+        Leader to Client OK && Leader to Follower Request
+        Follower to Client OK
+
+        PRO: Faster
+        CON: Possible data corruption
+
+SHARDING
+Splitting up certain data into seperate db
+    Problems
+    Some specific servers may overload
+    Single Point of Failure: If one system goes down, entire system isn't useable
