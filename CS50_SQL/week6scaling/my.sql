@@ -15,7 +15,7 @@ SHOW TABLES;
 DESCRIBE `cards`;
 
 -- Data Types
--- Integer = [ TINYINT , SMALLINT , MEDIUMINT , INT , BIGINT ]
+-- Integer = [ TINYINT , SMALLINT , MEDIUMINT , INT , BIGINT ] , [ SIGNED , UNSIGNED ]
 -- Real    = [ FLOAT , DOUBLE PRECISION , DECMIAL(digits, precision) ] 
 -- String  = [ CHAR(fixed) , VARCHAR(max) ] , [ TINYTEXT , TEXT , MEDIUMTEXT , LONGTEXT ]
 -- Boolean = [ BLOB ]
